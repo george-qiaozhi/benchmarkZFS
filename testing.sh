@@ -107,10 +107,66 @@
 # done
 
 
-cat ssd01.csv >> result.txt
-cat hdd01.csv >> result.txt
-cat ssd02.csv >> result.txt
-cat hdd02.csv >> result.txt
-cat ssd03.csv >> result.txt
-cat hdd03.csv >> result.txt
-cat ssd-var.csv >> result.txt
+# cat ssd01.csv >> result.txt
+# cat hdd01.csv >> result.txt
+# cat ssd02.csv >> result.txt
+# cat hdd02.csv >> result.txt
+# cat ssd03.csv >> result.txt
+# cat hdd03.csv >> result.txt
+# cat ssd-var.csv >> result.txt
+
+
+#################################################
+# benchmark new intel DC ssd, compare with Samsung SSD
+#################################################
+
+# bonnie++ -u root -d /ssd01 -f -b -q >> ssd01.csv
+
+# bonnie++ -u root -d /ssd11 -f -b -q >> ssd11.csv
+
+# bonnie++ -u root -d /ssd02 -f -b -q >> ssd02.csv
+
+# bonnie++ -u root -d /ssd12 -f -b -q >> ssd12.csv
+
+# bonnie++ -u root -d /ssd03 -f -b -q >> ssd03.csv 
+
+# bonnie++ -u root -d /ssd13 -f -b -q >> ssd13.csv
+
+# bonnie++ -u root -d /var -f -b -q >> ssd-var.csv
+
+# bonnie++ -u root -d /media/zfs/dc3 -f -b -q >> intel-ssd.csv
+
+# cat ssd01.csv >> result.txt
+# cat ssd11.csv >> result.txt
+# cat ssd02.csv >> result.txt
+# cat ssd12.csv >> result.txt
+# cat ssd03.csv >> result.txt
+# cat ssd13.csv >> result.txt
+# cat ssd-var.csv >> result.txt
+# cat intel-ssd.csv >> result.txt
+
+# #################################################
+# # benchmark HDD with mirror and without redundency both 20GB
+# #################################################
+
+# bonnie++ -u root -d /hdd01 -f -b -q >> hdd01.csv
+# bonnie++ -u root -d /hdd02 -f -b -q >> hdd02.csv
+# bonnie++ -u root -d /hdd03 -f -b -q >> hdd03.csv
+
+# cat hdd01.csv >> result.txt
+# cat hdd02.csv >> result.txt
+# cat hdd03.csv >> result.txt
+
+# #################################################
+# # intel ssd with raid0 20G 40G 80G bonnie++ benchmark
+# #################################################
+for i in {1..5}
+do
+bonnie++ -u root -d /SSD20G -f -b -q >> SSD20G.csv
+bonnie++ -u root -d /SSD40G -f -b -q >> SSD40G.csv
+bonnie++ -u root -d /SSD80G -f -b -q >> SSD80G.csv
+done
+cat SSD20G.csv >> result.txt
+cat SSD40G.csv >> result.txt
+cat SSD80G.csv >> result.txt
+

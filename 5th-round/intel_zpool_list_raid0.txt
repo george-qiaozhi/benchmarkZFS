@@ -1,0 +1,4 @@
+NAME     SIZE  ALLOC   FREE  EXPANDSZ   FRAG    CAP  DEDUP  HEALTH  ALTROOT
+SSD20G  19.5G   276K  19.5G         -     0%     0%  1.00x  ONLINE  -
+SSD40G    39G   276K  39.0G         -     0%     0%  1.00x  ONLINE  -
+SSD80G    78G   276K  78.0G         -     0%     0%  1.00x  ONLINE  -

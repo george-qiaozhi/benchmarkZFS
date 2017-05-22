@@ -163,10 +163,26 @@
 for i in {1..5}
 do
 bonnie++ -u root -d /SSD20G -f -b -q >> SSD20G.csv
+sleep 10m
 bonnie++ -u root -d /SSD40G -f -b -q >> SSD40G.csv
+sleep 10m
 bonnie++ -u root -d /SSD80G -f -b -q >> SSD80G.csv
+sleep 10m
 done
 cat SSD20G.csv >> result.txt
 cat SSD40G.csv >> result.txt
 cat SSD80G.csv >> result.txt
 
+# #################################################
+# samsung ssd with raid1 mirror under different number of mirror per pool
+# 2 vdev vs 3 vdev
+# #################################################
+for i in {1..5}
+do
+bonnie++ -u root -d /raid1-2vdev -f -b -q >> raid1-2vdev.csv
+sleep 10m
+bonnie++ -u root -d /raid1-3vdev -f -b -q >> raid1-3vdev.csv
+sleep 10m
+done
+cat raid1-2vdev.csv >> result.txt
+cat raid1-3vdev.csv >> result.txt

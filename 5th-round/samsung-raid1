@@ -1,0 +1,31 @@
+  pool: raid1-3vdev
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	raid1-3vdev  ONLINE       0     0     0
+	  mirror-0  ONLINE       0     0     0
+	    sda5    ONLINE       0     0     0
+	    sda6    ONLINE       0     0     0
+	    sda7    ONLINE       0     0     0
+
+errors: No known data errors
+  pool: raid1-2vdev
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	raid1-2vdev  ONLINE       0     0     0
+	  mirror-0  ONLINE       0     0     0
+	    sda8    ONLINE       0     0     0
+	    sda9    ONLINE       0     0     0
+
+errors: No known data errors
+NAME          SIZE  ALLOC   FREE  EXPANDSZ   FRAG    CAP  DEDUP  HEALTH  ALTROOT
+SSD20G       19.5G   276K  19.5G         -     0%     0%  1.00x  ONLINE  -
+SSD40G         39G   276K  39.0G         -     0%     0%  1.00x  ONLINE  -
+SSD80G         78G   276K  78.0G         -     0%     0%  1.00x  ONLINE  -
+raid1-2vdev  19.5G    64K  19.5G         -     0%     0%  1.00x  ONLINE  -
+raid1-3vdev  19.5G    64K  19.5G         -     0%     0%  1.00x  ONLINE  -

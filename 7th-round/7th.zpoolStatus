@@ -1,0 +1,44 @@
+  pool: R1_1T
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	R1_1T       ONLINE       0     0     0
+	  mirror-0  ONLINE       0     0     0
+	    sdb1    ONLINE       0     0     0
+	    sdb2    ONLINE       0     0     0
+
+errors: No known data errors
+
+  pool: R1_2T
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	R1_2T       ONLINE       0     0     0
+	  mirror-0  ONLINE       0     0     0
+	    sdd1    ONLINE       0     0     0
+	    sde1    ONLINE       0     0     0
+
+errors: No known data errors
+
+  pool: R5_500G
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	R5_500G     ONLINE       0     0     0
+	  raidz1-0  ONLINE       0     0     0
+	    sdc1    ONLINE       0     0     0
+	    sdc2    ONLINE       0     0     0
+	    sdc3    ONLINE       0     0     0
+	    sdc4    ONLINE       0     0     0
+
+errors: No known data errors
+NAME      SIZE  ALLOC   FREE  EXPANDSZ   FRAG    CAP  DEDUP  HEALTH  ALTROOT
+R1_1T     904G  16.8G   887G         -     0%     1%  1.00x  ONLINE  -
+R1_2T    1.81T  1.05M  1.81T         -     0%     0%  1.00x  ONLINE  -
+R5_500G  1.41T   552K  1.41T         -     0%     0%  1.00x  ONLINE  -

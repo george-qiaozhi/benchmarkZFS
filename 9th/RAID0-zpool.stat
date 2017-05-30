@@ -1,0 +1,80 @@
+Fri May 26 16:28:40 CDT 2017
+***zpool iostat -v***
+               capacity     operations    bandwidth
+pool        alloc   free   read  write   read  write
+----------  -----  -----  -----  -----  -----  -----
+R5_6T       16.1G  7.23T    655    740  80.7M  82.9M
+  sdb       4.02G  1.81T    164    185  20.3M  20.8M
+  sdc       4.01G  1.81T    163    184  20.1M  20.7M
+  sdd       4.02G  1.81T    163    184  20.1M  20.7M
+  sde       4.02G  1.81T    164    185  20.2M  20.7M
+----------  -----  -----  -----  -----  -----  -----
+
+  pool: R5_6T
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	R5_6T       ONLINE       0     0     0
+	  sdb       ONLINE       0     0     0
+	  sdc       ONLINE       0     0     0
+	  sdd       ONLINE       0     0     0
+	  sde       ONLINE       0     0     0
+
+errors: No known data errors
+NAME    SIZE  ALLOC   FREE  EXPANDSZ   FRAG    CAP  DEDUP  HEALTH  ALTROOT
+R5_6T  7.25T  16.1G  7.23T         -     0%     0%  1.00x  ONLINE  -
+***df -h***
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.9G     0  3.9G   0% /dev
+tmpfs           798M  9.4M  789M   2% /run
+/dev/sda10       19G  4.0G   14G  24% /
+tmpfs           3.9G  220K  3.9G   1% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/sda12      464M  154M  282M  36% /boot
+/dev/sda11       19G  1.3G   17G   8% /home
+/dev/sda13       33G  914M   31G   3% /var
+tmpfs           798M   80K  798M   1% /run/user/1000
+R5_6T           7.1T   17G  7.1T   1% /R5_6T
+Fri May 26 18:27:22 CDT 2017
+***zpool iostat -v***
+               capacity     operations    bandwidth
+pool        alloc   free   read  write   read  write
+----------  -----  -----  -----  -----  -----  -----
+R6_4T        224K  7.25T     47    202  3.12M  10.2M
+  sdb         92K  1.81T     11     57   798K  2.60M
+  sdc         40K  1.81T     11     52   798K  2.52M
+  sdd           0  1.81T     11     38   798K  2.44M
+  sde         92K  1.81T     11     54   798K  2.60M
+----------  -----  -----  -----  -----  -----  -----
+
+  pool: R6_4T
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	R6_4T       ONLINE       0     0     0
+	  sdb       ONLINE       0     0     0
+	  sdc       ONLINE       0     0     0
+	  sdd       ONLINE       0     0     0
+	  sde       ONLINE       0     0     0
+
+errors: No known data errors
+NAME    SIZE  ALLOC   FREE  EXPANDSZ   FRAG    CAP  DEDUP  HEALTH  ALTROOT
+R6_4T  7.25T   224K  7.25T         -     0%     0%  1.00x  ONLINE  -
+***df -h***
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.9G     0  3.9G   0% /dev
+tmpfs           798M  9.4M  789M   2% /run
+/dev/sda10       19G  4.0G   14G  24% /
+tmpfs           3.9G  220K  3.9G   1% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/sda12      464M  154M  282M  36% /boot
+/dev/sda11       19G  1.3G   17G   8% /home
+/dev/sda13       33G  914M   31G   3% /var
+tmpfs           798M   80K  798M   1% /run/user/1000
+R6_4T           7.1T  128K  7.1T   1% /R6_4T

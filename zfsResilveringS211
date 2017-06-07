@@ -1,0 +1,135 @@
+###### zpool RAID5 3+1 ssd 300G/626G about 50% usage
+###### each disk share ~103G data 
+###### flush /dev/sdb with /dev/zero: ~240G zeros
+###### Resilvering speed: 4.6818G/minute
+root@s211:/home/zfs/Desktop# zpool status tankR5
+  pool: tankR5
+ state: ONLINE
+status: One or more devices could not be used because the label is missing or
+	invalid.  Sufficient replicas exist for the pool to continue
+	functioning in a degraded state.
+action: Replace the device using 'zpool replace'.
+   see: http://zfsonlinux.org/msg/ZFS-8000-4J
+  scan: scrub in progress since Tue Jun  6 11:38:40 2017
+    33.3G scanned out of 413G at 310M/s, 0h20m to go
+    0 repaired, 8.06% done
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	tankR5      ONLINE       0     0     0
+	  raidz1-0  ONLINE       0     0     0
+	    sdb     UNAVAIL      0     0 2.38M  corrupted data
+	    sdc     ONLINE       0     0     0
+	    sdd     ONLINE       0     0     0
+	    sde     ONLINE       0     0     0
+
+errors: No known data errors
+
+**********************
+***after zpool replace -f tankR5 sdb
+**********************
+
+  pool: tankR5
+ state: ONLINE
+status: One or more devices is currently being resilvered.  The pool will
+	continue to function, possibly in a degraded state.
+action: Wait for the resilver to complete.
+  scan: resilver in progress since Tue Jun  6 12:34:19 2017
+    1.76G scanned out of 413G at 361M/s, 0h19m to go
+    449M resilvered, 0.43% done
+config:
+
+	NAME             STATE     READ WRITE CKSUM
+	tankR5           ONLINE       0     0     0
+	  raidz1-0       ONLINE       0     0     0
+	    replacing-0  UNAVAIL      0     0     0
+	      old        UNAVAIL      0     0 2.38M  corrupted data
+	      sdb        ONLINE       0     0     0  (resilvering)
+	    sdc          ONLINE       0     0     0
+	    sdd          ONLINE       0     0     0
+	    sde          ONLINE       0     0     0
+
+errors: No known data errors
+
+root@s211:/home/zfs/Desktop# zpool status
+  pool: tankR5
+ state: ONLINE
+status: One or more devices is currently being resilvered.  The pool will
+	continue to function, possibly in a degraded state.
+action: Wait for the resilver to complete.
+  scan: resilver in progress since Tue Jun  6 12:34:19 2017
+    290G scanned out of 413G at 312M/s, 0h6m to go
+    72.4G resilvered, 70.11% done
+config:
+
+	NAME             STATE     READ WRITE CKSUM
+	tankR5           ONLINE       0     0     0
+	  raidz1-0       ONLINE       0     0     0
+	    replacing-0  UNAVAIL      0     0     0
+	      old        UNAVAIL      0     0 2.38M  corrupted data
+	      sdb        ONLINE       0     0     0  (resilvering)
+	    sdc          ONLINE       0     0     0
+	    sdd          ONLINE       0     0     0
+	    sde          ONLINE       0     0     0
+
+errors: No known data errors
+root@s211:/home/zfs/Desktop# zpool status
+  pool: tankR5
+ state: ONLINE
+  scan: resilvered 103G in 0h22m with 0 errors on Tue Jun  6 12:56:49 2017
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	tankR5      ONLINE       0     0     0
+	  raidz1-0  ONLINE       0     0     0
+	    sdb     ONLINE       0     0     0
+	    sdc     ONLINE       0     0     0
+	    sdd     ONLINE       0     0     0
+	    sde     ONLINE       0     0     0
+
+errors: No known data errors
+
+###### zpool RAID5 3+1 ssd 469G/626G about 75% usage
+###### each disk share ~ 165G data 
+###### flush /dev/sdb with /dev/zero: ~240G zeros
+###### resilvering speed: 4.4595G/minute
+root@s211:/home/zfs/Desktop# zpool replace -f tankR5 sdd                                        
+root@s211:/home/zfs/Desktop# zpool status tankR5
+  pool: tankR5
+ state: ONLINE
+status: One or more devices is currently being resilvered.  The pool will
+        continue to function, possibly in a degraded state.
+action: Wait for the resilver to complete.
+  scan: resilver in progress since Wed Jun  7 11:10:42 2017
+    2.87G scanned out of 658G at 327M/s, 0h34m to go
+    734M resilvered, 0.44% done
+config:
+
+        NAME             STATE     READ WRITE CKSUM
+        tankR5           ONLINE       0     0     0
+          raidz1-0       ONLINE       0     0     0
+            sdb          ONLINE       0     0     0
+            sdc          ONLINE       0     0     0
+            replacing-2  UNAVAIL      0     0     0
+              old        UNAVAIL      0     0     2  corrupted data
+              sdd        ONLINE       0     0     0  (resilvering)
+            sde          ONLINE       0     0     0
+
+errors: No known data errors
+
+
+root@s211:/home/zfs/Desktop# zpool status tankR5
+  pool: tankR5
+ state: ONLINE
+  scan: resilvered 165G in 0h37m with 0 errors on Wed Jun  7 11:47:53 2017
+config:
+
+        NAME        STATE     READ WRITE CKSUM
+        tankR5      ONLINE       0     0     0
+          raidz1-0  ONLINE       0     0     0
+            sdb     ONLINE       0     0     0
+            sdc     ONLINE       0     0     0
+            sdd     ONLINE       0     0     0
+            sde     ONLINE       0     0     0
+
+errors: No known data errors

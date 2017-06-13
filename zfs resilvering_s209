@@ -1,7 +1,7 @@
 ###### zpool 2T / 3+1 RAID5 ~ 6T 
 ###### each disk share 657GB data 
 ###### flush /dev/sdc with /dev/zero: 2T zeros
-######
+###### resilvering speed: 2.75G/minute
 root@s209:/pool# pv < /dev/zero > /dev/sdc
 1.82TiB 3:25:29 [90.7MiB/s] [=============================================================> ] 99% ETA 0:00:00│tankR5      2.69T  4.56T     57    265  6.92M  26.8M
 pv: write failed: No space left on device                                                                    │  raidz1    2.69T  4.56T     57    265  6.92M  26.8M
@@ -75,7 +75,7 @@ root@s209:/pool#
 ###### zpool 3T / 3+1 RAID5 ~ 6T 
 ###### each disk share ~1T data 
 ###### flush /dev/sdc with /dev/zero: 2T zeros
-######
+###### resilvering speed: 2.92G/minute
 root@s209:/pool# zpool status tankR5
   pool: tankR5
  state: ONLINE
@@ -142,3 +142,91 @@ config:
 
 errors: No known data errors
 
+root@s209:/pool# zpool status tankR5
+  pool: tankR5
+ state: ONLINE
+status: One or more devices is currently being resilvered.  The pool will
+        continue to function, possibly in a degraded state.
+action: Wait for the resilver to complete.
+  scan: resilver in progress since Wed Jun  7 11:05:31 2017
+    1.54T scanned out of 4.03T at 200M/s, 3h38m to go
+    393G resilvered, 38.10% done
+config:
+
+        NAME             STATE     READ WRITE CKSUM
+        tankR5           ONLINE       0     0     0
+          raidz1-0       ONLINE       0     0     0
+            replacing-0  UNAVAIL      0     0     0
+              old        UNAVAIL      0     0     0  corrupted data
+              sdb        ONLINE       0     0     0  (resilvering)
+            sdc          ONLINE       0     0     0
+            sdd          ONLINE       0     0     0
+            sde          ONLINE       0     0     0
+
+errors: No known data errors
+
+  pool: tankR5
+ state: ONLINE
+  scan: resilvered 1.01T in 5h43m with 0 errors on Wed Jun  7 16:49:26 2017
+config:
+
+  NAME        STATE     READ WRITE CKSUM
+  tankR5      ONLINE       0     0     0
+    raidz1-0  ONLINE       0     0     0
+      sdb     ONLINE       0     0     0
+      sdc     ONLINE       0     0     0
+      sdd     ONLINE       0     0     0
+      sde     ONLINE       0     0     0
+
+errors: No known data errors
+
+###### zpool 1.3T / 3+1 RAID5 ~ 6T 
+###### each disk share ~450G data 
+###### flush /dev/sdd with /dev/zero: 2T zeros
+###### resilvering speed: 3.4729G/minute
+
+root@s209:/home/zfs/Desktop# zpool status tankR5
+  pool: tankR5
+ state: ONLINE
+  scan: resilvered 448G in 2h9m with 0 errors on Thu Jun  8 23:12:52 2017
+config:
+
+  NAME        STATE     READ WRITE CKSUM
+  tankR5      ONLINE       0     0     0
+    raidz1-0  ONLINE       0     0     0
+      sdb     ONLINE       0     0     0
+      sdc     ONLINE       0     0     0
+      sdd     ONLINE       0     0     0
+      sde     ONLINE       0     0     0
+
+errors: No known data errors
+
+###### zpool 2.6T / 3+1 RAID5 ~ 6T  50%
+###### each disk share 854G data 
+###### flush /dev/sdd with /dev/zero: 2T zeros
+###### resilvering speed: 1.9G/minute
+
+###### zpool 2.6T / 3+1 RAID5 ~ 6T  50%  2nd round
+###### each disk share 895G data 
+###### flush /dev/sdd with /dev/zero: 2T zeros
+###### resilvering speed: 3.594G/minute
+
+  pool: tankR5
+ state: ONLINE
+  scan: resilvered 895G in 4h9m with 0 errors on Mon Jun 12 09:27:42 2017
+config:
+
+  NAME        STATE     READ WRITE CKSUM
+  tankR5      ONLINE       0     0     0
+    raidz1-0  ONLINE       0     0     0
+      sdb     ONLINE       0     0     0
+      sdc     ONLINE       0     0     0
+      sdd     ONLINE       0     0     0
+      sde     ONLINE       0     0     0
+
+errors: No known data errors
+
+###### zpool 3.9T / 3+1 RAID5 ~ 6T  75% 
+###### each disk share  data 
+###### flush /dev/sde with /dev/zero: 2T zeros
+###### resilvering speed: /minute

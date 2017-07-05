@@ -1,0 +1,9 @@
+SHELL=/bin/bash
+
+@hourly /usr/sbin/smartctl -A /dev/sdb > /home/zfs/SMART_cron/Z4Z836W2/`date +\%Y\%m\%d\%H`.smart 2>&1
+@hourly /usr/sbin/smartctl -A /dev/sdc > /home/zfs/SMART_cron/Z4Z835KX/`date +\%Y\%m\%d\%H`.smart 2>&1
+@hourly /usr/sbin/smartctl -A /dev/sdd > /home/zfs/SMART_cron/Z4Z834ZC/`date +\%Y\%m\%d\%H`.smart 2>&1  
+@hourly /usr/sbin/smartctl -A /dev/sde > /home/zfs/SMART_cron/Z4Z8350H/`date +\%Y\%m\%d\%H`.smart 2>&1  
+
+@reboot /home/zfs/SMART_cron/smart_cron_hourly.sh
+

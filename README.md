@@ -1,7 +1,7 @@
-# benchmarkZFS
+# benchmark ZFS Recovery Performance
 benchmarking zfs performance and resilience on different raidz setting, zpool utilization, and so on...
 
-## 1. Use Bonnie++ benchmarking ZFS I/O for RAID 5 & RAID 6 (RAIDZ1 and RAIDZ2)
+## 1. Use Bonnie++ benchmarking ZFS I/O for RAID5 & RAID6
 We use bonnie++ to benchmarking the performance of the zfs
 ### limit RAM size
 Bonnie++ always use dataset that x2 the system RAM size to avoid caching effect. Our system has 32GB RAM installed, to change the system RAM via kernel boot parameter:
@@ -17,9 +17,10 @@ link to Kernel boot parameters: [https://wiki.ubuntu.com/Kernel/KernelBootParame
 my `/etc/default/grub` file also attached.
 
 ### execute bonnie++ 
-`bonnie++ -d /tankR5 -u root -q >> result.txt`
+`bonnie++ -d /tankR5 -u root -x 5 -f -q >> result.txt`
 
 then use `python result_filtering.py` to parse the result and paste to excel or google sheet.
 
+### create zpool using RAID5 and RAID6
 
 

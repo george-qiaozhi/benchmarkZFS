@@ -32,7 +32,7 @@ exec.sh(call bonnieBench.sh and log output)
 ### Step 3 process data
 use `python result_filtering.py` to parse the result and paste to excel or google sheet.
 
-## Disk Failure 
+## 1. Simulate a Disk Failure without simulater 
 There are several ways to simulate a disk failure in ZFS:
 - Physically remove disk from active zpool
 - Disconnect power source of disk

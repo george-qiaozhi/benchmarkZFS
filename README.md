@@ -157,7 +157,10 @@ We follow the OpenZFS summit from 2015 to 17, Issac Huang's talk and post.
 
 
 ## Git tips
-====> cache git credential to mute git push password/username prompt.
+Cache git credential 16 weeks to mute git push password/username prompt.
+`git config --global credential.helper 'cache --timeout=10000000'`
+Now push one last time.
+`git push -u origin master`
 
 ## Bug Report
 - To be added

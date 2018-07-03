@@ -77,12 +77,17 @@ my `/etc/default/grub` file also attached.
 ##### create zpool using RAIDZ1
 
 ```
-#RAID 5 3d+1p
-zpool create -f tank raidz1 sdc sdd sde sdf
+#RAID 5 4:1 parity ratio
+zpool create -f tank raidz1 sdaa sdab sdac sdad sdae
 ```
 
-##### execute bonnie++ 
-`bonnie++ -d /tankR5 -u root -x 5 -f -q >> result.txt`
+##### execute bonnie++ 5 times
+`bonnie++ -d /tank -u root -x 5 -f -q >> result.txt`
+
+##### or use dd to clone 150GB data to zpool at a time, dd will report performance in MB/s.
+`dd if=/dev/urandom of=/tank/`date +%m%d%H%M%S`.dat bs=10M count=15000`
+
+Always redirect results into a log file using `dd &> xx.log`
 
 script to use: 
 bonnieBench.sh(zpool with RAID5/RAID6 using different number of data disk and parity disk) 

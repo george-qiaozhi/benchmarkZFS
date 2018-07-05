@@ -27,7 +27,7 @@ zpool status ztank1
 df -h
 
 # create ztank2
-
+zpool destroy ztank1
 zpool create -f ztank2 raidz2 sdaa sdab sdac sdad sdae sdaf sdag sdah sdai sdaj
 zpool status ztank2
 

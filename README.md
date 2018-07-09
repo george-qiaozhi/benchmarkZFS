@@ -81,8 +81,8 @@ my `/etc/default/grub` file also attached.
 zpool create -f tank raidz1 sdaa sdab sdac sdad sdae
 ```
 
-##### execute bonnie++ 5 times
-`bonnie++ -d /tank -u root -x 5 -f -q >> result.txt`
+##### execute bonnie++ 3 times
+`bonnie++ -d /tank -u root -x 3 -f -q >> result.txt`
 
 ##### or use dd to clone 150GB data to zpool at a time, dd will report performance in MB/s.
 `dd if=/dev/urandom of=/tank/`date +%m%d%H%M%S`.dat bs=10M count=15000`
@@ -108,12 +108,24 @@ There are several ways to simulate a disk failure in ZFS. We use last one in our
 - Injecting error to system reserved area in disk drives (zero out first and last few MB)
 
 #### Methodology:
-- fill disk with random data to simulate workload. e.g, `openssl rand -out sample.txt -base64 $(( 2**30 * 3/4 ))` will create a 1GB file.
-- flush the underneath disk via IO bus. It will zero out entire disk including the formatting headers or partition table. e.g, `pv < /dev/zero > /dev/sdx` will inject zeros to device sdx.
+- fill disk with random data to simulate workload. e.g.:
+	- `dd if=/dev/urandom of=/output/dir/random.dat bs=10M count=10000`(SLOW)
+	- `openssl rand -out random.dat -base64 $(( 2**30 * 3/4 ))` will create a 1GB file. (FASTER)
+	- `fallocate -l 1000G ~/directory/1t.dat` creates a 1TB file. (INSTANT, no matter size)
+- inject error to disk so ZFS will treat it as failure disk
+	- flush the underneath disk via IO bus. It will zero out entire disk including the formatting headers or partition table. e.g, `pv < /dev/zero > /dev/sdx` will inject zeros to device sdx. (SLOW)
+	- or, erase first and last few MB of disk.e.g., `dd bs=512 if=/dev/zero of=/dev/sdx count=$((2048*500)) seek=$((`blockdev --getsz /dev/sdx` - 2048*500 ))` will zero out last 500mb disk space, then `dd bs=512 if=/dev/zero of=/dev/sdx count=$((2048*500))` to zero first 500mb. (FASTER)
 - notify ZFS to scrub system for error check via `zpool scrub poolname`.
 - once ZFS detect disk failure, replace it with new disk. We can just reformat the disk then plug it back via `zpool replace -f poolname /dev/sdx`
 - after replace disk, zfs will start the disk rebuild process. wait, chill, sleep for a while, then come back.
 - after rebuilt, `zpool status poolname` will show the resilvering duration.
+
+**NOTE:** * usually, the partition / format / label information are kept at the first 1Mb. RAID configuration are kept at the last 1Mb . ZFS reserved the last 8Mb next to the RAID config area.*
+`fdisk -l /dev/sdx` will show that a typical ZFS managed disk drive have following profile:
+- Sector *2048* to *7,812,481,023* is used by zfs, which is around 3.6TB available storage for ZFS from a 4TB HDD.
+- Sector *7812481024* to *7812497407* is solars reserved, which is around 8Mb used to store zpool information.
+The total number of sector is *7812499456*
+- This left the room for *0~2047* sectors, or 1MB of space reserved by system (e.g., label type: gpt). And the last 2048 sectors, reserved by RAID card for its configuration. And the rest by ZFS filesystem. (Each sector is 512 byte)
 
 ## dRAID evaluation
 We follow the OpenZFS summit from 2015 to 17, Issac Huang's talk and post. 
@@ -139,9 +151,7 @@ We follow the OpenZFS summit from 2015 to 17, Issac Huang's talk and post.
     ```
 3. use draid
 	```
-    modprobe zfs zfs_vdev_scrub_max_active=10 \ 
-    			 zfs_vdev_async_write_min_active=4 \ 
-                 draid_debug_lvl=5
+    modprobe zfs zfs_vdev_scrub_max_active=10 zfs_vdev_async_write_min_active=4 draid_debug_lvl=5
     ```
 4. configure draid
 	```
@@ -150,7 +160,7 @@ We follow the OpenZFS summit from 2015 to 17, Issac Huang's talk and post.
 5. create draid array
 	```
     zpool create -f tank draid1 cfg=17.nvl sdd sde sdf sdg sdh \ 
-    									   sdi sdj sdk sdl sdm \ 
+    					   sdi sdj sdk sdl sdm \ 
                                            sdn sdo sdp sdq sdr \ 
                                            sds sdt
     ```

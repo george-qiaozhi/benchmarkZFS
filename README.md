@@ -120,7 +120,7 @@ There are several ways to simulate a disk failure in ZFS. We use last one in our
 - after replace disk, zfs will start the disk rebuild process. wait, chill, sleep for a while, then come back.
 - after rebuilt, `zpool status poolname` will show the resilvering duration.
 
-**NOTE:** * usually, the partition / format / label information are kept at the first 1Mb. RAID configuration are kept at the last 1Mb . ZFS reserved the last 8Mb next to the RAID config area.*
+**NOTE**: *usually, the partition / format / label information are kept at the first 1Mb. RAID configuration are kept at the last 1Mb . ZFS reserved the last 8Mb next to the RAID config area.*
 `fdisk -l /dev/sdx` will show that a typical ZFS managed disk drive have following profile:
 - Sector *2048* to *7,812,481,023* is used by zfs, which is around 3.6TB available storage for ZFS from a 4TB HDD.
 - Sector *7812481024* to *7812497407* is solars reserved, which is around 8Mb used to store zpool information.

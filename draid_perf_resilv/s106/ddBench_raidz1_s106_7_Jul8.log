@@ -1,0 +1,353 @@
+  pool: ztank
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	ztank       ONLINE       0     0     0
+	  raidz1-0  ONLINE       0     0     0
+	    sdb     ONLINE       0     0     0
+	    sdc     ONLINE       0     0     0
+	  raidz1-1  ONLINE       0     0     0
+	    sdd     ONLINE       0     0     0
+	    sde     ONLINE       0     0     0
+	  raidz1-2  ONLINE       0     0     0
+	    sdf     ONLINE       0     0     0
+	    sdg     ONLINE       0     0     0
+	spares
+	  sdh       AVAIL   
+
+errors: No known data errors
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 754.808 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 762.571 s, 151 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 751.915 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 763.813 s, 151 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 752.97 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 757.188 s, 152 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 753.721 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 755.635 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 751.38 s, 154 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 756.216 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 758.706 s, 152 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 746.048 s, 155 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 759.448 s, 152 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 760.672 s, 152 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 749.096 s, 154 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 748.249 s, 154 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 762.44 s, 151 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 753.828 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 762.799 s, 151 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 753.827 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 749.717 s, 154 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 753.378 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 760.277 s, 152 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 753.888 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 762.364 s, 151 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 746.413 s, 155 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 759.306 s, 152 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 755.184 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 766.501 s, 150 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 772.05 s, 149 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 773.089 s, 149 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 781.401 s, 148 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 788.257 s, 146 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 779.486 s, 148 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 769.551 s, 150 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 776.604 s, 149 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 782.726 s, 147 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 816.731 s, 141 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 779.76 s, 148 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 843.811 s, 137 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 760.993 s, 152 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 769.36 s, 150 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 754.04 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 747.025 s, 154 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 752.862 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 748.972 s, 154 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 750.651 s, 154 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 759.982 s, 152 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 748.495 s, 154 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 748.452 s, 154 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 743.095 s, 155 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 751.341 s, 154 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 750.954 s, 154 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 749.727 s, 154 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 750.827 s, 154 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 762.148 s, 151 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 745.795 s, 155 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 755.965 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 767.493 s, 150 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 754.189 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 772.766 s, 149 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 759.512 s, 152 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 779.005 s, 148 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 752.853 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 774.405 s, 149 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 766.976 s, 150 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 788.257 s, 146 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 805.877 s, 143 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 830.878 s, 139 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 807.924 s, 143 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 803.637 s, 144 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 843.756 s, 137 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 820.073 s, 141 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 778.937 s, 148 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 747.653 s, 154 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 767.952 s, 150 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 758.621 s, 152 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 760.13 s, 152 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 764.155 s, 151 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 747.145 s, 154 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 762.219 s, 151 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 764.817 s, 151 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 756.354 s, 152 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 761.908 s, 151 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 760.046 s, 152 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 754.352 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 779.94 s, 148 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 764.91 s, 151 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 784.328 s, 147 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 769.576 s, 150 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 792.134 s, 146 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 757.313 s, 152 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 756.665 s, 152 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 760.438 s, 152 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 790.326 s, 146 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 754.957 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 774.034 s, 149 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 763.039 s, 151 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 756.096 s, 153 MB/s
+11000+0 records in
+11000+0 records out
+115343360000 bytes (115 GB) copied, 822.063 s, 140 MB/s
+******ztank status***** 
+07-09-09-05:41
+  pool: ztank
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	ztank       ONLINE       0     0     0
+	  raidz1-0  ONLINE       0     0     0
+	    sdb     ONLINE       0     0     0
+	    sdc     ONLINE       0     0     0
+	  raidz1-1  ONLINE       0     0     0
+	    sdd     ONLINE       0     0     0
+	    sde     ONLINE       0     0     0
+	  raidz1-2  ONLINE       0     0     0
+	    sdf     ONLINE       0     0     0
+	    sdg     ONLINE       0     0     0
+	spares
+	  sdh       AVAIL   
+
+errors: No known data errors
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/sda4              2.7T  9.3G  2.7T   1% /
+devtmpfs                63G     0   63G   0% /dev
+tmpfs                   63G     0   63G   0% /dev/shm
+tmpfs                   63G   18M   63G   1% /run
+tmpfs                   63G     0   63G   0% /sys/fs/cgroup
+/dev/sda2              8.0G  215M  7.8G   3% /boot
+10.15.5.103:/nfsZpool   18T  1.0M   18T   1% /nfsZpool
+tmpfs                   13G   12K   13G   1% /run/user/42
+tmpfs                   13G     0   13G   0% /run/user/0
+ztank                   11T   11T   38G 100% /ztank

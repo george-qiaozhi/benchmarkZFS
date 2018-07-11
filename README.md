@@ -168,7 +168,9 @@ We follow the OpenZFS summit from 2015 to 17, Issac Huang's talk and post.
                                            sdn sdo sdp sdq sdr \ 
                                            sds sdt
     ```
-
+#### preliminary result
+benchmarked with iozone: `./iozone -Ra -b iozone.xls -n 16384 -g 20971520 -y 4096 -w`
+![workload profiling](https://github.com/george-qiaozhi/benchmarkZFS/blob/master/draid_perf_resilv/s110/iozone_profile.pdf)
 
 ## Git tips
 Cache git credential 16 weeks to mute git push password/username prompt.

@@ -115,7 +115,7 @@ There are several ways to simulate a disk failure in ZFS. We use last one in our
 - inject error to disk so ZFS will treat it as failure disk
 	- flush the underneath disk via IO bus. It will zero out entire disk including the formatting headers or partition table. e.g, `pv < /dev/zero > /dev/sdx` will inject zeros to device sdx. (SLOW)
 	- or, erase first and last few MB of disk.e.g., 
-	```dd bs=512 if=/dev/zero of=/dev/sdx count=$((2048*500)) seek=$((\`blockdev --getsz /dev/sdx\` - 2048*500 ))```
+	```dd bs=512 if=/dev/zero of=/dev/sdx count=$((2048*500)) seek=$((`blockdev --getsz /dev/sdx` - 2048*500 ))```
 	will zero out last 500mb disk space, then 
 	```dd bs=512 if=/dev/zero of=/dev/sdx count=$((2048*500))``` 
 	to zero first 500mb. (FASTER)

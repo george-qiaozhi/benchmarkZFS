@@ -169,7 +169,7 @@ We follow the OpenZFS summit from 2015 to 17, Issac Huang's talk and post.
                                            sds sdt
     ```
 #### preliminary result
-benchmarked with iozone: `./iozone -Ra -b iozone.xls -n 16384 -g 20971520 -y 4096 -w`
+benchmarked with iozone: `./iozone -Rab iozone_s110_draid3_36hdd.xls -y 16384 -n 16384 -g 140G`
 ![workload profiling](https://github.com/george-qiaozhi/benchmarkZFS/blob/master/draid_perf_resilv/s110/iozone_profile.png)
 
 ## Git tips

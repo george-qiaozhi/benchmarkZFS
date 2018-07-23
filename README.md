@@ -4,20 +4,10 @@ benchmarking ZFS's I/O, dRAID, and resilvering performance, using HDD, SSD or NV
 ## Environment
 #### System
 - remote portal: comely[dot]{nmc}[dot]org
-- storage servers: {10.15.5.x} {centOS 7.5/1804} {myri10ge}
-	- zfs_server_103
-		- NFS server
-		- RAIDZ2 5+2 (7x4TB HDD 18TB zpool capacity) 
-		- AMD 6176 24 core
-	- zfs_server_104
-		- NFS client
-		- 5x4TB HDD
-		- AMD 6176 24 core
-	- JBOD_server_110
-    	- NFS client
-    	- JBOD server, 45x4TB HDD. 
-    	- Supermicro SC847E26-RJBOD1
-    	- 2 x Xeon E5620 16 core
+- storage servers in USRC testbed: 
+	- zfs_s10x [x=1~9] {ip=10.15.5.10x} {centOS 7.5/1804} {8x4TB HDD}
+		- zfs_s103: NFS server, 18TB Cap. (RAIDZ2 5+2 w/ 7x4TB HDD) 
+	- zfs_jbod_0x [x=0,1] {ip=10.15.5.11x} {centOS 7.5/1804} {45x4TB HDD} {Supermicro SC847E26-RJBOD1}
 	- NFS mounted on `/nfsZpool`
 #### NFS:
 - [NFS Server and Client Installation on CentOS 7](https://www.howtoforge.com/nfs-server-and-client-on-centos-7)

@@ -1,5 +1,5 @@
 # ZFS performance evaluation
-benchmarking ZFS's I/O, dRAID, and resilvering performance, using HDD, SSD or NVMe, various stripe width, DRAM size, zpool utilization, and so on...
+benchmarking raidz1~3's and dRAID1~3's, IO and resilvering performance, using HDD, SSD or NVMe, various stripe width, DRAM size, zpool utilization, and so on...
 
 ## Environment
 #### System

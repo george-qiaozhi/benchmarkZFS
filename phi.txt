@@ -1,0 +1,144 @@
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 37.4899 s, 573 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 60.4333 s, 355 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 32.8737 s, 653 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 65.1071 s, 330 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 35.1163 s, 612 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 55.1825 s, 389 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 515.954 s, 41.6 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 106.807 s, 201 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 509.738 s, 42.1 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 107.016 s, 201 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 338.534 s, 63.4 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 52.6872 s, 408 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 36.8425 s, 583 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 54.0565 s, 397 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 39.1002 s, 549 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 46.2927 s, 464 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 34.5162 s, 622 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 46.9446 s, 457 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 36.9668 s, 581 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 59.7181 s, 360 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 35.2788 s, 609 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 50.5825 s, 425 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 33.6976 s, 637 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 50.7062 s, 424 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 33.1469 s, 648 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 51.3573 s, 418 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 33.8858 s, 634 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 52.8759 s, 406 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 34.1247 s, 629 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 49.2203 s, 436 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 33.7947 s, 635 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 48.3461 s, 444 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 36.2163 s, 593 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 59.0369 s, 364 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 37.6987 s, 570 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 45.277 s, 474 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 37.4798 s, 573 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 60.392 s, 356 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 35.151 s, 611 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 50.8986 s, 422 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 36.238 s, 593 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 45.8333 s, 469 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 36.2426 s, 593 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 54.7281 s, 392 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 35.9524 s, 597 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 51.5967 s, 416 MB/s
+1280+0 records in
+1280+0 records out
+21474836480 bytes (21 GB) copied, 35.7686 s, 600 MB/s
+837+0 records in
+836+0 records out
+14025752576 bytes (14 GB) copied, 33.1879 s, 423 MB/s

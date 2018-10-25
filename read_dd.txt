@@ -1,0 +1,271 @@
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 698.708 s, 307 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 719.757 s, 298 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 709.968 s, 302 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 710.48 s, 302 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 710.792 s, 302 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 725.514 s, 296 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 715.046 s, 300 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 749.841 s, 286 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 790.961 s, 272 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 763.982 s, 281 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 779.135 s, 276 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 758.443 s, 283 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 777.917 s, 276 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 797.607 s, 269 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 811.134 s, 265 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 863.334 s, 249 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 921.4 s, 233 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 934.237 s, 230 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 955.683 s, 225 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 929.677 s, 231 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 951.909 s, 226 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1091.3 s, 197 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 928.487 s, 231 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 770.369 s, 279 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 752.578 s, 285 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 766.634 s, 280 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 767.762 s, 280 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 826.48 s, 260 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 815.59 s, 263 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 795.218 s, 270 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 811.493 s, 265 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 794.201 s, 270 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 784.423 s, 274 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 804.648 s, 267 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 936.42 s, 229 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 873.576 s, 246 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 926.137 s, 232 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 954.415 s, 225 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 884.051 s, 243 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 802.596 s, 268 MB/s
+dd: failed to open ‘/tank/1019133455.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133455.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133455.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133455.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+dd: failed to open ‘/tank/1019133456.dat’: No such file or directory
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1272.7 s, 169 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1257.07 s, 171 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1311.11 s, 164 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1332.51 s, 161 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1294.28 s, 166 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1293.98 s, 166 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1315.56 s, 163 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1307.08 s, 164 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1306.79 s, 164 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1402.31 s, 153 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1467.52 s, 146 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1476.45 s, 145 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1540.89 s, 139 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1555.21 s, 138 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1569.9 s, 137 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1619.33 s, 133 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1693.54 s, 127 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1818.08 s, 118 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1595.58 s, 135 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1407.72 s, 153 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1294.77 s, 166 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1351.23 s, 159 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1332.4 s, 161 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1353.06 s, 159 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1355.76 s, 158 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1394.1 s, 154 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1342.47 s, 160 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1368.41 s, 157 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1418.03 s, 151 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1358.31 s, 158 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1375.5 s, 156 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1414.17 s, 152 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1413.62 s, 152 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1486.24 s, 144 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1724.88 s, 125 MB/s
+12800+0 records in
+12800+0 records out
+214748364800 bytes (215 GB) copied, 1816.63 s, 118 MB/s
+8904+0 records in
+8903+0 records out
+149367554048 bytes (149 GB) copied, 1251.54 s, 119 MB/s

@@ -1,0 +1,57 @@
+d p s g c = 5 2 2 1 9, dRAID
+
+real	0m45.174s
+user	0m0.237s
+sys	0m29.945s
+
+real	0m44.061s
+user	0m0.259s
+sys	0m25.550s
+
+real	0m44.529s
+user	0m0.254s
+sys	0m24.143s
+
+real	0m44.382s
+user	0m0.239s
+sys	0m24.267s
+
+real	0m43.233s
+user	0m0.245s
+sys	0m24.380s
+
+real	0m43.234s
+user	0m0.248s
+sys	0m24.572s
+
+real	0m43.489s
+user	0m0.215s
+sys	0m24.548s
+
+real	0m44.777s
+user	0m0.235s
+sys	0m24.324s
+
+real	0m45.825s
+user	0m0.258s
+sys	0m24.584s
+
+real	0m43.770s
+user	0m0.240s
+sys	0m24.537s
+
+real	0m44.121s
+user	0m0.263s
+sys	0m24.316s
+
+real	0m43.709s
+user	0m0.236s
+sys	0m24.272s
+
+real	0m43.277s
+user	0m0.229s
+sys	0m24.193s
+
+real	0m43.928s
+user	0m0.250s
+sys	0m24.512s
